@@ -1,6 +1,7 @@
 body{
     font-family:Arial,sans-serif;
-    background: color #f0f0f0;text-align: center;
+    background: color #f0f0f0;
+    text-align: center;
 }
 h1{
     color:navy;
@@ -30,7 +31,6 @@ ul{
     padding: 5px;
       list-style-type: none;
       font-style:normal;
-      background-color:antiquewhite;
       font-size: 18px;
       list-style-type:square;
       list-style-position:inside;
@@ -55,6 +55,62 @@ th {
   background-color:#04AA6D;
   color: white;
 }
-
-
-
+a:visited {
+  color:black;
+  text-decoration: dashed;
+}
+a:link {
+  color:blue;
+  
+}
+body{
+  margin:0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+header, nav,footer{
+  background-color:gainsboro;
+  color:black;
+  padding:20PX;
+ 
+}
+nav ul {
+  list-style:none;
+  padding:0;
+  display:flex;
+  justify-content:center;
+  gap:20px;
+ 
+}
+nav a {
+  color:#04AA6D;
+text-decoration:none;
+}
+.main-container{
+  display:flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap:30px;
+  padding: 20px;
+}
+.mission-log{
+  width:60%;
+  text-align: left;
+}
+.sidebar{
+  width:25%;
+  background-color: #f0f0f0;
+  padding: 15px;
+  border-radius:8px;
+}
+footer{
+  margin-top: 20px;
+}
+@media (max-width:768px) {
+  .main-container {
+    flex-direction: column;
+  }
+  .mission-log, .sidebar {
+    width: 100%;
+  }
+}
